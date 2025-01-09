@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+
+}
+
+body {
+
+    background-image: url("https://thumbs.dreamstime.com/b/kids-game-rock-paper-scissors-pattern-white-background-134992609.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    border-style: double;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.buttons { margin-top: 45px;
+    display: flex;
+    gap: 30px;
+
+}
+button {
+    padding: 15px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    background: rgb(107, 34, 195);
+    background: radial-gradient(circle, rgba(107, 34, 195, 0.8127626050420168) 0%, rgba(2, 1, 4, 1) 84%);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+    
+}
+
+#rock {
+    background: rgb(195, 34, 48);
+    background: radial-gradient(circle, rgba(195, 34, 48, 0.8127626050420168) 0%, rgba(4, 1, 1, 1) 84%);
+}
+
+#paper {
+    background: rgb(43, 195, 34);
+    background: radial-gradient(circle, rgba(43, 195, 34, 0.8127626050420168) 0%, rgba(4, 1, 1, 1) 84%);
+}
+
+h1 {
+    font-family: "Londrina Shadow", serif;
+    font-size: 55px;
+    transition: opacity 0.6s ease-out;
+}
+
+h1:hover {
+    opacity: 0.5;
+}
+
+p { font-size: 25px;
+    font-weight: bold;
+    margin: 35px 15px 0;
+    font-family: "Bangers", serif;
+}
+
+.your-score span {
+    color: rgb(79, 4, 255);
+}
+
+.machine-score span{
+    color: rgba(131, 9, 9, 0.767);
+}
+
+.result {
+    font-size: 35px;
+}
